@@ -1,0 +1,29 @@
+$(".Inbound").click(function(){
+    $(".Inbound").hide();
+    $(".Dribble").show();
+    $("h1").hide();
+    $("h2").show();
+});
+$(".Dribble").dblclick(function(){
+    $(".Dribble").fadeOut();
+    $(".Screen").fadeIn();
+    $("h2").fadeOut();
+    $("h3").fadeIn();
+});
+$(".Screen").mouseenter(function(){
+    $(".Screen").slideUp();
+    $(".Hesi").slideDown();
+    $("h3").slideUp();
+    $("h4").slideDown();
+});
+$(".Hesi").click(function(){
+    $("Hesi").fadeOut();
+    $(".Dagger").show();
+    $("h4").fadeOut();
+    $("h5").show();
+});
+$(".Dagger").mouseleave(function(){
+    $(".Dagger").hide();
+    $(".Finals").fadeIn();
+     alert("You are now a Champion");
+});
